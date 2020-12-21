@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet");
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style-type: none;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background-color: #ffffff;
+	background-size: 80%;
+}
+
+main{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.grid-container{
+display: grid;
+gap: 5px;
+grid-template: 
+		"titular 			titular 		titular"    150px 
+		"escritorio			tipografia 		tipografia" auto
+		"escritorio			cromatica		cromatica"	300px/
+				
+			350px					auto			auto;
+	}
+
+
+.titular{
+	grid-area: titular;
+	background:
+	url(../img/mateheader.png) right bottom no-repeat,
+	url(../img/fondoheader.png);
+	 line-height: 0.6;
+	
+}
+
+
+.escritorio{
+	grid-area: escritorio;
+	background-color: black;
+	padding-top: 1%;
+	padding-left: 1%;
+}
+
+
+
+.tipografia{
+	grid-area: tipografia;
+	background-color: black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.cromatica{
+	grid-area: cromatica;
+	background-color: grey;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.logo{
+	background: url('../img/MICROSITIO.png') no-repeat;
+    background-size:100%;
+    height:190px;
+    width:220px;
+	float: left;
+  	margin-left: 5%;
+  	margin-right: auto;
+  	margin-top: 5%;
+  }
+
+
+.rslides {
+  margin: 0 auto 40px;
+  }
+
+.galeria{
+	width: 100%;
+	height: 80%;
+	background-color: black; 
+	padding-left: 6%;
+	margin-top: 2%;
+}
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+h1{
+	color: rgba(255, 128, 72, 1);
+	font-family: 'Staatliches', cursive;
+	font-size: 4.6rem;
+	font-weight: 700;
+	
+	text-align: center;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 4.8%;
+
+}
+
+
+h2{
+	text-align: center;
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	font-size: 1.7rem;
+	font-weight: 500;
+	margin-right: 2%;
+	margin-left:2%;
+	padding-bottom: 1%;
+}
+
+h3{
+	font-family: 'Barlow Condensed', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 2.5rem;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+
+
+
+.tipos{
+	background-size:60%;
+	background:url(../img/tipografia.png)no-repeat;
+    height:400px;
+    width:900px;
+  	margin-left: 0%;
+  	margin-top: 2%;
+  	float: left;
+}
+
+
+.titulo2{
+	width: 100%;
+	height: 13%;
+	padding-top: 0%;
+}
+.tipo1{
+	width: 100%;
+	height: 30%;
+	background-color: #c43a20;
+	margin-top: 0%;
+	float: left;
+}
+.tipo2{
+	width: 100%;
+	height: 30%;
+	background-color: #7f7daf;
+	margin-top: 0%;
+	float: left;
+}
+.tipo3{
+	width: 100%;
+	height: 30%;
+	background-color: #81c6e2;
+	margin-top: 0%;
+	float: left;
+	margin-bottom: 1%;
+}
+
+.tipoimg1{
+	background: url('../img/barlow.png') no-repeat;
+    display:inline-block;
+    background-size:70%;
+    height:100%;
+    width:100%;	
+	margin-left: 15%;
+}
+
+.tipoimg2{
+	background: url('../img/Dmserif.png') no-repeat;
+    display:inline-block;
+    background-size:70%;
+    height:100%;
+    width:100%;	
+	margin-left: 15%;
+
+}
+
+.tipoimg3{
+	background: url('../img/statliches.png') no-repeat;
+    display:inline-block;
+    background-size:70%;
+    height:100%;
+    width:100%;	
+	margin-left: 15%;
+
+}
+.titulo3{
+	width: 100%;
+	height: 20%;
+}
+.croma1{
+	width: 25%;
+	height: 80%;
+	padding-left: 4%;
+	float: left;
+}
+.croma2{
+	width: 25%;
+	height: 80%;
+	padding-left: 3.5%;
+	float: left;
+}
+.croma3{
+	width: 25%;
+	height: 80%;
+	padding-left: 4%;
+	float: left;
+}
+.croma4{
+	width: 25%;
+	height: 80%;
+	padding-left: 3%;
+	float: left;
+}
+
+
+
+@media (max-width:993px) and (min-width:780px){
+
+	main{
+		width: 100%;
+		margin: 0;
+	} 
+		.grid-container{
+
+		grid-template: 
+		"titular 			titular 		titular"    150px 
+		"escritorio			tipografia 		tipografia" auto
+		"cromatica			cromatica		cromatica"	300px/
+				
+			350px					auto			auto;
+
+}
+.tipo1{
+	width: 100%;
+	height: 30%;
+
+	margin-top: 0%;
+	float: left;
+}
+.tipoimg1{
+	background: url('../img/barlow.png') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:50%;
+    width:100%;	
+	padding-left: 0%;
+	margin-top: 10%;
+	margin-left: 0%;
+}
+
+.tipoimg2{
+	background: url('../img/Dmserif.png') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:50%;
+    width:100%;	
+	padding-left: 0%;
+	margin-top: 10%;
+	margin-left: 0%;
+
+}
+
+.tipoimg3{
+	background: url('../img/statliches.png') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:50%;
+    width:100%;	
+	padding-left: 0%;
+	margin-top: 10%;
+	margin-left: 0%;
+
+}
+}
+@media (max-width: 780px) {
+
+main{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.grid-container{
+	grid-template: 
+	"titular" auto
+	"escritorio" auto	
+	"tipografia" 300px
+	"cromatica" auto/
+		auto;
+}
+
+.galeria{
+	padding-left: 16%;
+
+}
+.tipo1{
+	width: 100%;
+	height: 30%;
+	background-color: red;
+	margin-top: 0%;
+	float: left;
+}
+.titulo2{
+	width: 100%;
+	height: 15%;
+	margin-top: 0%;
+}
+.tipo1{
+	width: 100%;
+	height: 25%;
+	background-color: #c43a20;
+	margin-top: 0%;
+	float: left;
+}
+.tipo2{
+	width: 100%;
+	height: 25%;
+	background-color: #7f7daf;
+	margin-top: 0%;
+	float: left;
+}
+.tipo3{
+	width: 100%;
+	height: 25%;
+	background-color: #81c6e2;
+	margin-top: 0%;
+	float: left;
+	margin-bottom: 1%;
+}
+
+.tipoimg1{
+	background: url('../img/barlow.png') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:100%;
+    width:100%;	
+	padding-left: 0%;
+	margin-top: 0.5%;
+	margin-left: 0%;
+}
+
+.tipoimg2{
+	background: url('../img/Dmserif.png') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:100%;
+    width:100%;	
+	padding-left: 0%;
+	margin-top: 1%;
+	margin-left: 0%;
+
+}
+
+.tipoimg3{
+	background: url('../img/statliches.png') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:100%;
+    width:100%;	
+	padding-left: 0%;
+	margin-top: 1%;
+	margin-left: 0%;
+
+}
+
+.titulo3{
+	width: 100%;
+	height: 10%;
+}
+
+.croma1{
+	width: 50%;
+	height: 45%;
+	padding-left: 10%;
+	float: left;
+}
+.croma2{
+	width: 50%;
+	height:45%;
+	padding-left: 5%;
+	float: left;
+}
+.croma3{
+	width: 50%;
+	height: 45%;
+	padding-left: 10%;	
+	padding-bottom: 1%;
+	float: left;
+}
+.croma4{
+	width: 50%;
+	height: 45%;
+	padding-left: 5%;
+	padding-bottom: 1%;
+	float: left;
+}
+
+}
+}

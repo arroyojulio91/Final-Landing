@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style-type: none;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background-image: url(../img/fondoweb5.jpg);
+	background-size: 80%;
+}
+
+main{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.grid-container{
+display: grid;
+gap: 5px;
+grid-template: 
+		"titular 		titular 	titular" 		auto 
+		"calltoaction	imagen 		imagen" 	370px
+		"calltoaction 	beneficios 	beneficios" 	auto 
+		"testimonios	testimonios	testimonios" 	auto 
+		"rescate		rescate		rescate" 		auto /
+		30%			30%		40%;
+	}
+
+
+.titular{
+	grid-area: titular;
+	background-color: #FFFFFF;
+	 line-height: 0.6;
+	grid-gap: 0px;
+	
+}
+
+
+.subtitulo{
+	font-family: 'Staatliches', cursive;
+
+	color: #6D0D34;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.imagen{
+	grid-area: imagen;
+	background-color: black;
+	padding: 1%;
+}
+
+.rslides {
+  margin: 0 auto 40px;
+  }
+
+.beneficios{
+	grid-area: beneficios;
+	background-color: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.calltoaction{
+	grid-area: calltoaction;
+	background-color: rgba(255, 128, 72, 1);
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.testimonios{
+	grid-area: testimonios;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 1%;
+	padding-right: 0%;
+}
+
+.rescate{
+	grid-area: rescate;
+	background-color: rgba(255, 128, 72, 1);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.titularte{
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+}
+.titularte:hover{
+	transform:scale(1.3);
+}
+
+h1{
+	color: rgba(255, 128, 72, 1);
+	font-family: 'Staatliches', cursive;
+	font-size: 4.6rem;
+	font-weight: 700;
+	
+	text-align: center;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 4.8%;
+
+}
+
+h1 span {
+    color:#2D0618;
+    font-weight: 300;
+    font-size: 4.1rem;
+}
+
+.h1color{
+    color:black;
+    font-weight: 300;
+    font-size: 4.rem;
+    font-family: 'Staatliches', cursive;
+
+
+    
+}
+
+h2{
+	text-align: center;
+	color: #2D0618;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-right: 2%;
+	margin-left:2%;
+}
+
+h3{
+	font-family: 'Barlow Condensed', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 2.5rem;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+h4{
+	color: #2D0618;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.top{
+	margin-top: 0%;
+}
+
+h5{
+	color: #2D0618;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 25px;
+	margin-top: 10px;
+	float: left;
+	margin-left: 15%;
+	vertical-align: middle;
+}
+.h5trip{
+	color: #2D0618;
+	font-family: 'DM Serif Display', serif;
+	font-size: 1.9rem;
+	font-weight: 500;
+	line-height: 25px;
+	vertical-align: middle;
+	margin-left: 15%;
+	float: left;
+	text-align: center;
+}
+h6{
+	color: #FFFFFF;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.0rem;
+	font-weight: 500;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+}
+.h7oferta{
+	color: rgba(255, 128, 72, 1);
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: center;
+	padding-left: 5;
+	transition: all 0.5s ease;
+
+}
+
+form{
+	color: rgba(255, 128, 72, 1);
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 500;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.tituloform{
+	color: black;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	font-style: italic;
+	margin-left: 12.5%;
+}
+
+
+.boton{
+	width: 50%;
+	height: 50px;
+	background-color: black;
+	font-size: 1.2rem; color: #FFFFFF;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 700;
+	padding: 1px;
+	border-radius: 20px;
+	border-color: #FFFFFF;
+	margin-top: 15px;
+	margin-left: 25%;
+}
+
+.textarea1{
+	width: 75%;
+	height: 30px;
+	margin-top: 12px;
+	margin-bottom: 25px;
+	font-size: 0.9rem; color: #6D0D34;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-weight: 500;
+	border-radius: 10px;
+	border-color: #FFFFFF;
+	border-width: 2px;
+	background-color: #FFFFFF;
+	margin-left: 12.5%;
+}
+
+.bullet{
+    background: url('../img/heli.png') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:30px;
+    width:30px;
+    margin-right: 1%;
+
+}
+
+.foto{
+    background: url('../img/delarua.jpg') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:120px;
+    width:120px;
+    margin-left: 25%;
+    float: left;
+    vertical-align: middle;
+ 
+}
+.foto1{
+    background: url('../img/trip.png') no-repeat;
+    vertical-align: middle;
+    background-size:100%;
+    height:120px;
+    width:110px;
+    float: left;
+    margin-left: 33%;
+   	vertical-align: middle;
+}
+.foto2{
+     background: url('../img/delpo.png') no-repeat;
+    vertical-align: middle;
+    background-size:100%;
+    height:120px;
+    width:110px;
+    float: left;
+    margin-left: 33%;
+    vertical-align: middle;
+   
+}
+
+.elpepe{
+	width: 33.33%;
+	height: auto;
+	float: left;
+
+}
+.elpepe2{
+	width: 33.33%;
+	height: auto;
+	float: left;
+
+}
+.elpepe3{
+	width: 33.33%;
+	height: auto;
+	float: left;
+
+}
+.logo{
+	background: url('../img/logomate3.png') no-repeat;
+    background-size:100%;
+    height:130px;
+    width:190px;
+	float: left;
+  	margin-left: 5%;
+  	margin-right: auto;
+  	vertical-align: middle;
+}
+.h52trip{
+	color: #2D0618;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 25px;
+	vertical-align: middle;
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+	float: left;
+}
+.vuelos{
+	background-size:100%;
+    height:360px;
+    width:480px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	vertical-align: middle;
+  	margin-top: 2%;
+}
+
+@media (max-width:993px) and (min-width:780px){
+
+	main{
+		width: 100%;
+		margin: 0;
+	}
+
+	.grid-container{
+
+		grid-template: 
+		"titular 		titular" 		auto 
+		"imagen 		calltoaction"	370
+		"beneficios		beneficios"		auto
+		"testimonios 	testimonios" 	auto
+		"rescate		rescate" 		auto /
+		 auto 			40%;
+ 	}
+
+ 	.testimonios{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 2%;
+	padding-right: 2%;
+	}
+
+
+	h5{
+	color: #2D0618;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 25px;
+	margin-top: 15px;
+	float: left;
+	margin-left: 15%;
+	vertical-align: middle;
+}
+	.imagen{
+	background-size: 84%;
+}
+
+.foto2{
+    background: url('../img/delpo.png') no-repeat;
+    vertical-align: middle;
+    background-size:100%;
+    height:120px;
+    width:110px;
+    float: left;
+    margin-left: 35%;
+   
+}
+
+.elpepe{	
+	width: 33.3%;
+	height: auto;
+	float: left;
+}
+
+.h5trip{
+	color: #2D0618;
+	font-family: 'DM Serif Display', serif;
+	font-size: 1.7rem;
+	font-weight: 500;
+	line-height: 25px;
+	vertical-align: middle;
+	margin-left: 10%;
+	float: left;
+}
+
+.h52trip{
+	color: #2D0618;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 500;
+	line-height: 25px;
+	vertical-align: middle;
+	margin-left: 15%;
+	text-align: center;
+	float: left;
+}
+
+h1{
+	color: rgba(255, 128, 72, 1);
+	font-family: 'Staatliches', cursive;
+	font-size: 4rem;
+	font-weight: 700;	
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 5%;
+}
+.h1color{
+    color:black;
+    font-weight: 300;
+    font-size: 3.5rem;
+    font-family: 'Staatliches', cursive;
+
+    }
+}
+
+
+@media (max-width: 780px) {
+
+main{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.grid-container{
+	grid-template: 
+	"titular" auto
+	"beneficios" auto
+	
+	"imagen" 360px
+	"calltoaction" auto
+	"testimonios" auto
+	"rescate" auto/
+		auto;
+}
+
+.testimonios{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 1%;
+	padding-right: 1%;
+	}
+
+.imagen{
+	background-size: 100%;
+}
+
+.elpepe3{
+	width: 0%;
+	
+}
+.elpepe2{
+	width: 50%;	
+	
+}
+.elpepe{
+	width: 50%;	
+	
+}
+.titularte:hover{
+	transform:scale(1.15);
+}
+
+	h5{
+	color: #2D0618;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.0rem;
+	font-weight: 500;
+	line-height: 20px;
+	margin-top: 16px;
+	float: left;
+	margin-left: 15%;
+	vertical-align: none;
+	opacity: 100;
+}
+
+.logo{
+	background: url('../img/logomate3.png') no-repeat;
+    background-size:100%;
+    height:90px;
+    width:130px;
+	float: left;
+  	margin-left: 6%;
+  	margin-right: 0%;
+  	vertical-align: middle;
+}
+
+.boton{
+	width: 40%;
+	margin-left: 30%
+}
+h4{
+	color: #2D0618;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.02rem;
+	font-weight: 500;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+.top{
+	margin-top: 1%;
+}
+
+h1{
+	color: rgba(255, 128, 72, 1);
+	font-family: 'Staatliches', cursive;
+	font-size: 2.2rem;
+	font-weight: 700;	
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-top: 10%;
+
+}
+.h1color{
+    color:black;
+    font-weight: 300;
+    font-size: 2.0rem;
+    margin-left: 0%;
+
+ }
+
+.foto{
+    background: url('../img/delarua.jpg') no-repeat;
+    display:inline-block;
+    background-size:100%;
+    height:120px;
+    width:120px;
+    float: left;
+    margin-left: 30%;
+    margin-top: 1%;
+
+
+ 
+}
+.foto1{
+    background: url('../img/trip.png') no-repeat;
+
+    background-size:100%;
+    height:120px;
+    width:110px;
+    float: left;
+    margin-left: 27%;
+    margin-top: 4%;
+   
+}
+
+
+
+.foto2{
+    background: url('../img/delpo.png') no-repeat;
+
+    background-size:0%;
+    height:0px;
+    width:0px;
+    float: left;
+    margin-left: 30%;
+    margin-top: 1%;
+    opacity: 100;
+   
+}
+
+.h52trip{
+	color: #2D0618;
+	font-family: 'DM Serif Display', serif;
+	font-size: 0rem;
+	font-weight: 500;
+	line-height: 25px;
+	vertical-align: middle;
+	margin-left: 10%;
+	float: left;
+	opacity: 100;
+}
+
+
+
+.vuelos{
+	background-size:100%;
+    height:350px;
+    width:460px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	vertical-align: middle;
+  	margin-top: 4%;
+}
+
+.h5trip{
+	color: #2D0618;
+	font-family: 'DM Serif Display', serif;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 25px;
+	margin-left: 15%;
+	margin-top: 15px;
+	float: left;
+}
+
+
+
